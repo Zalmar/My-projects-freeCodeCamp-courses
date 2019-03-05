@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    min-width: 300px;
+    background: #91785D;
+    font-family: 'Roboto', sans-serif;
+}
+
+#title {
+    padding-top: 50px;
+    background: #91785D;
+}
+
+#main > span{
+    display: block;
+    background: #91785D;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+#img-div {
+    width: 98%;
+    background: #BEB7A4;
+    margin:0 auto;
+}
+
+#img-div span {
+    display: block;
+    padding-bottom: 20px;
+}
+
+#image {
+    padding: 20px;
+    max-width: 30%; 
+    display: block; 
+    height: auto;
+    margin: auto;
+}
+
+#img-caption {
+    font-size: 1em;
+}
+
+#tribute-info {
+    background: #91785D;
+    padding-top: 70px;
+}
+
+#tribute-info h2{
+    text-align:left;
+    max-width:600px;
+    margin:0 auto;
+}
+
+#tribute-info ul {
+    max-width:600px;
+    margin:0 auto;
+    text-align:left;
+}
+
+#tribute-info li {
+    margin: 15px 0;
+}
+
+.quote {
+    margin: 50px;
+}
+
+#wiki-link {
+    margin: 50px;
+}
+
+footer {
+    margin: 30px;
+    background: #91785D;
+}
