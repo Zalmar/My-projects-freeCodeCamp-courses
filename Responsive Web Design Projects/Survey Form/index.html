@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700,900" rel="stylesheet">
     <title>Survey Form</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <div class="form__wrapper">
+        <p id="description">What are you of player?</p>
+        <form id="survey-form">
+            <div class="full_tab">
+                <div class="label_tab">
+                    <label id="name-label" for="name">Name:</label>
+                </div>
+                <div class="input_tab">
+                    <input id="name" name="name" type="text" class="input-field" placeholder="Enter your name" required>
+                </div>
+            </div>
+
+            <div class="full_tab">
+                <div class="label_tab">
+                    <label id="email-label" for="email">Email:</label>
+                </div>
+                <div class="input_tab">
+                    <input id="email" name="email" type="email" class="input-field" placeholder="Enter your Email" required>
+                </div>
+            </div>
+
+            <div class="full_tab">
+                <div class="label_tab">
+                    <label id="number-label" for="age">Age:</label>
+                </div>
+                <div class="input_tab">
+                    <input id="number" name="age" type="number" class="input-field" placeholder="Age" min="1" max="100" required>
+                </div>
+            </div>
+
+            <div class="full_tab">
+                <div class="label_tab">
+                    <label for="game_genres">what do you like game genres?</label>
+                </div>
+                <div class="input_tab">
+                    <select id="dropdown" name="game_genres">
+                        <option disabled value>Select an option</option>
+                        <option value="shooter">Shooter</option>
+                        <option value="rts">Real Time Strategy</option>
+                        <option value="rpg">RPG</option>
+                        <option value="mmo">MMO</option>
+                        <option value="mmorpg">MMO RPG</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="full_tab">
+                <div class="label_tab">
+                    <label for="game_genres">Who you are:</label>
+                </div>
+                <div class="input_tab radio-buttons">
+                    <ul style="list-style: none;">
+                        <li class="radio"><label>Noob<input name="radio-buttons" value="1" type="radio" class="radio-input"></label></li>
+                        <li class="radio"><label>Gamer<input name="radio-buttons" value="2" type="radio" class="radio-input"></label></li>
+                        <li class="radio"><label>Pro gamer<input name="radio-buttons" value="3" type="radio" class="radio-input"></label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="full_tab">
+                <div class="label_tab">
+                    <label for="preferences">What video games did you play?<br>(Check all that apply):
+                    </label>
+                </div>
+                <div class="input_tab check-box">
+                    <ul id="top" style="list-style: none;">
+                        <li class="checkbox"><label><input name="preferences" value="1" type="checkbox" class="top-game">Half-Life 2</label></li>
+                        <li class="checkbox"><input name="preferences" value="2" type="checkbox" class="top-game">Grand Theft Auto V</li>
+                        <li class="checkbox"><label><input name="preferences" value="3" type="checkbox" class="top-game">The Orange Box</label></li>
+                        <li class="checkbox"><label><input name="preferences" value="4" type="checkbox" class="top-game">Half-Life</label></li>
+                        <li class="checkbox"><label><input name="preferences" value="5" type="checkbox" class="top-game">BioShock</label></li>
+                        <li class="checkbox"><label><input name="preferences" value="6" type="checkbox" class="top-game">Baldur's Gate II: Shadows of Amn</label></li>
+                        <li class="checkbox"><label><input name="preferences" value="7" type="checkbox" class="top-game">Portal 2</label></li>
+                        <li class="checkbox"><label><input name="preferences" value="8" type="checkbox" class="top-game">The Elder Scrolls V: Skyrim</label></li>
+                        <li class="checkbox"><label><input name="preferences" value="9" type="checkbox" class="top-game">Mass Effect 2</label></li>
+                        <li class="checkbox"><label><input name="preferences" value="10" type="checkbox" class="top-game">Grand Theft Auto: Vice City</label></li>
+                        <li class="checkbox"><label><input name="preferences" value="10" type="checkbox" class="top-game">Sid Meier's Civilization II</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="full_tab">
+                <div class="label_tab game_genres">
+                    <label for="game_genres">What did you play last week?</label>
+                </div>
+                <div class="input_tab">
+                    <textarea id="comments" name="comment" placeholder="Enter your comment here..." cols="30" rows="3"></textarea>
+                </div>
+            </div>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <span>©2019 Zalmar</span>
+    </footer>
 </body>
+
 </html>
