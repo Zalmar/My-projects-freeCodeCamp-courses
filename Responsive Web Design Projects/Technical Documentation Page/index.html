@@ -1,13 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <title>Technical Documentation Page</title>
 </head>
+
 <body>
-    
+    <nav id="navbar">
+        <header>
+            <h1>JS Documentation</h1>
+        </header>
+        <ul>
+            <li><a class=nav-link href="#Basics">Basics</a></li>
+            <li><a class=nav-link href="#Comments">Comments</a></li>
+            <li><a class=nav-link href="#Declarations">Declarations</a></li>
+            <li><a class=nav-link href="#Data_structures_and_types">Data structures and types</a></li>
+            <li><a class=nav-link href="#Literals">Literals</a></li>
+            <li><a class=nav-link href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="Basics" class="main-section">
+            <header>
+                Basics
+            </header>
+            <article>
+                <p>JavaScript borrows most of its syntax from Java, C and C++, but is also influenced by Awk, Perl and
+                    Python.</p>
+                <p>JavaScript is case-sensitive and uses the Unicode character set. For example, the word Früh (which
+                    means "early" in German) could be used as a variable name.</p>
+                <code>var Früh = "foobar";</code>
+                <p>But, the variable früh is not the same as Früh because JavaScript is case sensitive.</p>
+                <p>In JavaScript, instructions are called statements and are separated by semicolons (;).</p>
+                <p>A semicolon is not necessary after a statement if it is written on its own line. But if more than
+                    one statement on a line is desired, then they must be separated by semicolons. ECMAScript also has
+                    rules for automatic insertion of semicolons (ASI) to end statements. (For more information, see the
+                    detailed reference about JavaScript's lexical grammar.) It is considered best practice, however, to
+                    always write a semicolon after a statement, even when it is not strictly needed. This practice
+                    reduces the chances of bugs getting into the code.</p>
+                <p>The source text of JavaScript script gets scanned from left to right and is converted into a
+                    sequence of input elements which are tokens, control characters, line terminators, comments, or
+                    whitespace. Spaces, tabs, and newline characters are considered whitespace.</p>
+            </article>
+        </section>
+
+        <section id="Comments" class="main-section">
+            <header>
+                Comments
+            </header>
+            <article>
+                <p>The syntax of comments is the same as in C++ and in many other languages:</p>
+                <code>// a one line comment
+
+                    <br>/* this is a longer,
+                    <br> * multi-line comment
+                    <br> */
+
+                    <br>/* You can't, however, /* nest comments */ SyntaxError */</code>
+            </article>
+        </section>
+        <section id="Declarations" class="main-section">
+            <header>
+                Declarations
+            </header>
+            <article>
+                <p>There are three kinds of declarations in JavaScript.</p>
+                <dl>
+                    <dt>var</dt>
+                    <dd>Declares a variable, optionally initializing it to a value.</dd>
+                    <dt>let</dt>
+                    <dd>Declares a block-scoped, local variable, optionally initializing it to a value.</dd>
+                    <dt>const</dt>
+                    <dd>Declares a block-scoped, read-only named constant.</dd>
+                </dl>
+                <p>You use variables as symbolic names for values in your application. The names of variables, called
+                    identifiers, conform to certain rules.</p>
+                <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent
+                    characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the
+                    characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+                <p>You can use most of ISO 8859-1 or Unicode letters such as å and ü in identifiers (for more details
+                    see this blog post). You can also use the Unicode escape sequences as characters in identifiers.</p>
+            </article>
+        </section>
+
+        <section id="Data_structures_and_types" class="main-section">
+            <header>
+                Data structures and types
+            </header>
+            <article>
+                <p>The latest ECMAScript standard defines seven data types:</p>
+                <ul>
+                    <li>Six data types that are primitives:</li>
+                    <ul id="second-list">
+                        <li>Boolean. true and false.</li>
+                        <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null
+                            is not the same as Null, NULL, or any other variant.</li>
+                        <li>undefined. A top-level property whose value is not defined.</li>
+                        <li>Number. An integer or floating point number. For example: 42 or 3.14159.</li>
+                        <li>String. A sequence of characters that represent a text value. For example: "Howdy"</li>
+                        <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+                    </ul>
+                    <li>and Object</li>
+                </ul>
+                <p>Although these data types are relatively few, they enable you to perform useful functions with your
+                    applications. Objects and functions are the other fundamental elements in the language. You can
+                    think of objects as named containers for values, and functions as procedures that your application
+                    can perform.</p>
+            </article>
+        </section>
+
+        <section id="Literals" class="main-section">
+            <header>
+                Literals
+            </header>
+            <article>
+                <p>You use literals to represent values in JavaScript. These are fixed values, not variables, that you
+                    literally provide in your script. This section describes the following types of literals:</p>
+                <ul>
+                    <li>Array literals</li>
+                    <li>Boolean literals</li>
+                    <li>Floating-point literals</li>
+                    <li>Integers</li>
+                    <li>Object literals</li>
+                    <li>RegExp literals</li>
+                    <li>String literals</li>
+                </ul>
+                <p>An array literal is a list of zero or more expressions, each of which represents an array element,
+                    enclosed in square brackets ([]). When you create an array using an array literal, it is
+                    initialized with the specified values as its elements, and its length is set to the number of
+                    arguments specified.</p>
+                <p>The following example creates the coffees array with three elements and a length of three:</p>
+                <code>var coffees = ['French Roast', 'Colombian', 'Kona'];</code>
+                <p>You do not have to specify all elements in an array literal. If you put two commas in a row, the
+                    array is created with undefined for the unspecified elements. The following example creates the
+                    fish array:</p>
+                <code>var fish = ['Lion', , 'Angel'];</code>
+                <p>If you include a trailing comma at the end of the list of elements, the comma is ignored. In the
+                    following example, the length of the array is three. There is no myList[3]. All other commas in the
+                    list indicate a new element.</p>
+                <code>var myList = ['home', , 'school', ];</code>
+                <p>In the following example, the length of the array is four, and myList[0] and myList[2] are missing.</p>
+                <code>var myList = [ ,'home', , 'school'];</code>
+            </article>
+        </section>
+
+        <section id="Reference" class="main-section">
+            <header>
+                Reference
+            </header>
+            <article>
+                <ul>
+                    <li>All the documentation in this page is taken from <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
 </body>
+
 </html>
