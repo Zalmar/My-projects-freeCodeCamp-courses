@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
     <title>Personal Portfolio Webpage</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">My projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="welcome-section">
+        <h1>I'm Marat</h1>
+        <p>a front-end developer</p>
+    </div>
+
+    <div id="projects">
+        <h2>My projects</h2>
+
+        <div class="project-tile">
+            <img src="https://github.com/karacas/imgLiquid/blob/master/tests/woody.jpg?raw=true" alt="">
+            <div class="project-title">
+                <a target="_blank" href="https://codepen.io/zalmar/pen/gEwZEN">Tribute Page</a>
+            </div>
+        </div>
+
+        <div class="project-tile">
+            <div class="project-title">
+                <a target="_blank" href="https://codepen.io/zalmar/pen/aMBzRV">Survey Form</a>
+            </div>
+        </div>
+
+        <div class="project-tile">
+            <div class="project-title">
+                <a target="_blank" href="https://codepen.io/zalmar/pen/GerWQG">Product Landing Page</a>
+            </div>
+        </div>
+
+        <div class="project-tile">
+            <div class="project-title">
+                <a target="_blank" href="https://codepen.io/zalmar/pen/GeWvbG">Technical Documentation Page</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="contacts">
+        <h2>Contacts</h2>
+        <div class="contact">
+            <a target="_blank" id="profile-link" href="https://github.com/Zalmar" target="_blank">
+                <img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="">
+            </a>
+        </div>
+        <div class="contact">
+            <a target="_blank" id="profile-link" href="https://www.freecodecamp.org/zalmar" target="_blank">
+                <img src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png" alt="">
+            </a>
+        </div>
+        <div class="contact">
+            <a target="_blank" id="profile-link" href="https://twitter.com/Marat58374931" target="_blank">
+                <img src="https://image.flaticon.com/icons/svg/145/145812.svg" alt="">
+            </a>
+        </div>
+    </div>
+    <footer>
+        <span>©2019 Zalmar</span>
+    </footer>
 </body>
+
 </html>

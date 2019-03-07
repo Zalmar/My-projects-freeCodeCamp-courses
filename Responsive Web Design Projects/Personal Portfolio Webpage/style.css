@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    background: #645DD7;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    list-style: none;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #AFA2FF;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 3px;
+}
+
+#navbar a:hover {
+    border-bottom: 3px solid #DC6BAD;
+    border-top: 3px solid #DC6BAD;
+    color: #DC6BAD;
+}
+
+#welcome-section {
+    top: 60px;
+    background: linear-gradient(180deg, #645DD7 10%, #DC6BAD 90%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome-section h1 {
+    font-size: 5em;
+    color: #AFA2FF;
+}
+
+#welcome-section p {
+    color: #AFA2FF;
+    font-size: 1.2em;
+}
+
+#projects h2 {
+    width: 100%;
+    display: block;
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    margin: 50px;
+    color: #AFA2FF;
+    font-size: 3.5em;
+}
+
+#projects {
+    width: 100%;
+    padding: 0 500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background: linear-gradient(180deg, #DC6BAD,#645DD7);
+
+}
+
+.project-tile {
+    border: 2px solid #645DD7;
+    border-radius: 10px;
+    width: 300px;
+    height: 335px;
+    margin: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: #C6C4F0;
+    margin-bottom: 100px;
+}
+
+.project-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #645DD7;
+}
+
+.project-title a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color:#645DD7;
+    font-weight: 700;
+}
+
+
+.project-title a:hover {
+    color: #DC6BAD;
+}
+
+#contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(180deg, #645DD7 10%, #DC6BAD 90%);
+}
+
+#contacts h2 {
+    color:#AFA2FF;
+    display: block;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px;
+    font-size: 3.5em;
+
+}
+
+.contact img {
+    width: 150px;
+    margin: 20px;
+    margin-bottom: 190px;
+}
+
+footer {
+    background:  #DC6BAD;
+    text-align: center;
+    padding: 50px;
+    color: #645DD7;
+}
+
+@media screen and (max-width:1680px){
+    #projects {
+        padding: 0 400px;
+
+    }
+}
+
+@media screen and (max-width:1480px){
+    #projects {
+        padding: 0 300px;
+
+    }
+}
+
+@media screen and (max-width:1282px){
+    #projects {
+        padding: 0 200px;
+
+    }
+}
+
+@media screen and (max-width:1082px){
+    #projects {
+        padding: 0 100px;
+
+    }
+    #navbar ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width:642px){
+    #projects {
+        padding: 0;
+
+    }
+    .contact img{
+        max-width: 80px;
+        margin: 0;
+    }
+
+    .project-tile {
+        margin: 50px;
+    }
+
+}
